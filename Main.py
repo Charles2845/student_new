@@ -17,21 +17,34 @@ from combination import *
 class app:
     def __init__(self):
         self.root = Tk()
-        self.root.title("hello world")
+        self.root.title("芯片查询软件")
         self.InitTime = time.time()
-        self.frm = Frame(self.root)
-        self.frm_T = Frame(self.frm)
+        self.frm_T = Frame(self.root)
         self.root.geometry()
-
-        Button(self.frm, text="help", command=lambda: self.helpMessage()).pack(side=LEFT)  # help
+        # 菜单栏
+        menubar = Menu(self.root)
+        # 文件菜单
+        filemenu = Menu(menubar,tearoff=0)
+        filemenu.add_command(label='导入 excel',command=lambda:self.importdata())
+        filemenu.add_command(label='导出 excel',command=lambda :self.outputExcel())
+        menubar.add_cascade(label='文件',menu=filemenu)
+        # 修改删除菜单
+        modifymenu = Menu(menubar,tearoff=0)
+        modifymenu.add_command(label='删除',command=lambda :self.deleteSoc())
+        modifymenu.add_command(label='增加',command=lambda :self.addSoc())
+        modifymenu.add_command(label='修改',command=lambda :self.modify())
+        menubar.add_cascade(label='修改',menu=modifymenu)
+        # 查询菜单
+        searchmenu = Menu(menubar,tearoff=0)
+        searchmenu.add_command(label='组合查询',command=lambda :self.combination())
+        menubar.add_cascade(label='查询',menu=searchmenu)
+        menubar.add_command(label='帮助',command=lambda :self.helpMessage())
+        self.root.config(menu=menubar)
         self.test_in = Entry(self.frm_T)
         self.chooseList = Combobox(self.frm_T, values=['id','管脚数','型号','名称'])
         self.chooseList.pack(side=LEFT)
         self.test_in.pack(side=LEFT)
-        Button(self.frm_T, text="export excel", command=lambda: self.outputExcel()).pack(side=RIGHT)  # 导出数据按钮
-        Button(self.frm_T, text="import excel", command=lambda: self.importdata()).pack(side=RIGHT)  # 导入数据按钮
         self.frm_T.pack()
-        self.frm.pack()
         Button(self.root, text="search", command=lambda: self.search()).pack()  # 查询按钮
 
         self.mid = Frame(self.root)
@@ -53,11 +66,6 @@ class app:
         self.tree.heading('col7', text='芯片介绍')
         self.tree.pack()
         self.mid.pack()
-        # 删除按钮
-        Button(self.root,text="delete",command=lambda:self.deleteSoc()).pack()
-        Button(self.root, text="add", command=lambda: self.addSoc()).pack()
-        Button(self.root, text="modify", command=lambda: self.modify()).pack()
-        Button(self.root, text="combination search", command=lambda: self.combination()).pack()
         # 时钟模块
         self.label = Label(text="")
         self.label.pack()
@@ -89,7 +97,7 @@ class app:
                     self.tree.insert('',i,values=each)
                     i += 1
             else:
-                tkMessageBox.showinfo('None','No one matched')
+                tkMessageBox.showinfo('None','没有匹配项')
 
     def importdata(self):
         filename = tkFileDialog.askopenfilename()
@@ -99,18 +107,19 @@ class app:
         for i in range(nrows):
             if i >= 1:
                 try:
-                    if type(table.row_values(i)[0]) == float:
-                        temp = str(table.row_values(i)[0])
+                    if type(table.row_values(i)[1]) == float:
+                        temp = str(table.row_values(i)[1])
                     else:
-                        temp = table.row_values(i)[0].encode('utf-8')
+                        temp = table.row_values(i)[1].encode('utf-8')
                     insertstring = insertSQLstring.format(temp,
-                                                          table.row_values(i)[1].encode('utf-8'),
                                                           table.row_values(i)[2].encode('utf-8'),
-                                                          table.row_values(i)[3],
-                                                          table.row_values(i)[4].encode('utf-8'),
-                                                          table.row_values(i)[5].encode('utf-8'))
+                                                          table.row_values(i)[3].encode('utf-8'),
+                                                          table.row_values(i)[4],
+                                                          table.row_values(i)[5].encode('utf-8'),
+                                                          table.row_values(i)[6].encode('utf-8'))
                     cursor.execute(insertstring)
-                except:
+                except Exception as e:
+                    print e
                     print i
         conn.commit()
         tkMessageBox.showinfo("import","Import successfully")
@@ -155,8 +164,8 @@ class app:
 
 
     def update_clock(self):
-        now = time.time()-self.InitTime
-        show = time.strftime("%M:%S",time.localtime(now))
+        now = time.time()
+        show = time.strftime("%H:%M:%S",time.localtime(now))
         self.label.configure(text=show)
         self.root.after(1000, self.update_clock)
 
