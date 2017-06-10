@@ -176,8 +176,8 @@ ps：本查询系统还有计时器功能，可以看到您使用本系统的时
 
 
     def update_clock(self):
-        now = time.time()
-        show = time.strftime("%H:%M:%S",time.localtime(now))
+        now = time.time()-self.InitTime
+        show = time.strftime("%M:%S",time.localtime(now))
         self.label.configure(text=show)
         self.root.after(1000, self.update_clock)
 
