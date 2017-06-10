@@ -53,7 +53,7 @@ class AddSoc(Toplevel):
         number = self.number.get()
         definition = self.definition.get()
         information = self.information.get()
-
+        # Entry获取的信息写入到mysql当中
         insertstring = insertSQLstring.format(typename.encode('utf-8'),
                                               name.encode('utf-8'),
                                               function.encode('utf-8'),

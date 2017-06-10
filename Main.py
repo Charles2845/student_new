@@ -22,13 +22,13 @@ class app:
         self.frm_T = Frame(self.root)
         self.frm_T2 = Frame(self.root)
         self.root.geometry()
-        Button(self.root, text="help", command=lambda: self.helpMessage()).pack(side=TOP)  # help
-        Button(self.frm_T2, text="export excel", command=lambda: self.outputExcel()).pack(side=RIGHT)  # 导出数据按钮
-        Button(self.frm_T2, text="import excel", command=lambda: self.importdata()).pack(side=RIGHT)  # 导入数据按钮
-        Button(self.frm_T2,text="delete",command=lambda:self.deleteSoc()).pack(side=LEFT)
-        Button(self.frm_T2, text="add", command=lambda: self.addSoc()).pack(side=LEFT)
-        Button(self.frm_T2, text="modify", command=lambda: self.modify()).pack(side=LEFT)
-        Button(self.frm_T2, text="combination search", command=lambda: self.combination()).pack(side=LEFT)
+        Button(self.root, text="帮助", command=lambda: self.helpMessage()).pack(side=TOP)  # help
+        Button(self.frm_T2, text="导出 excel", command=lambda: self.outputExcel()).pack(side=RIGHT)  # 导出数据按钮
+        Button(self.frm_T2, text="导入 excel", command=lambda: self.importdata()).pack(side=RIGHT)  # 导入数据按钮
+        Button(self.frm_T2,text="删除芯片",command=lambda:self.deleteSoc()).pack(side=LEFT)
+        Button(self.frm_T2, text="增加芯片", command=lambda: self.addSoc()).pack(side=LEFT)
+        Button(self.frm_T2, text="修改芯片信息", command=lambda: self.modify()).pack(side=LEFT)
+        Button(self.frm_T2, text="组合查询", command=lambda: self.combination()).pack(side=LEFT)
 
         self.test_in = Entry(self.frm_T)
         self.chooseList = Combobox(self.frm_T, values=['功能','管脚数','型号','名称'])
@@ -36,7 +36,7 @@ class app:
         self.test_in.pack(side=LEFT)
         self.frm_T.pack()
         self.frm_T2.pack()
-        Button(self.frm_T, text="search", command=lambda: self.search()).pack(side=BOTTOM)  # 查询按钮
+        Button(self.frm_T, text="搜索", command=lambda: self.search()).pack(side=BOTTOM)  # 查询按钮
 
         self.mid = Frame(self.root)
         self.tree = Treeview(self.mid, show="headings",columns=('col1', 'col2', 'col3', 'col4', 'col5', 'col6','col7'))
@@ -85,7 +85,7 @@ ps：本查询系统还有计时器功能，可以看到您使用本系统的时
         name_choose = chooseDic.get(self.chooseList.get().encode('utf-8'))
         if name_choose:
             self.tree.delete()
-            name = self.test_in.get()
+            name = self.test_in.get()  # 通过Entry获取输入信息，然后拼接成SQL查询语句
             searchString  = "SELECT * FROM test WHERE {}='{}'".format(name_choose,name)
             cursor.execute(searchString)
             data = cursor.fetchall()
@@ -93,16 +93,19 @@ ps：本查询系统还有计时器功能，可以看到您使用本系统的时
             if data:
                 i = 1
                 for each in data:
+                    # treeview显示查询到的信息
                     self.tree.insert('',i,values=each)
                     i += 1
             else:
                 tkMessageBox.showinfo('None','没有匹配项')
 
     def onDBClick(self,event):
+        # 双击显示详细信息
         item = self.tree.selection()[0]
         tkMessageBox.showinfo('Detail',self.tree.item(item, "values"))
 
     def importdata(self):
+        # 利用xlrd读取excel信息并分别倒入到mysql当中
         filename = tkFileDialog.askopenfilename()
         data = xlrd.open_workbook(filename)
         table = data.sheets()[0]
@@ -128,6 +131,7 @@ ps：本查询系统还有计时器功能，可以看到您使用本系统的时
         tkMessageBox.showinfo("import","Import successfully")
 
     def outputExcel(self):
+        # 读取数据库中现有的数据然后写入新的excel
         cursor.execute("SELECT * FROM test")
         wb = xlwt.Workbook()
         ws = wb.add_sheet('Main')
@@ -153,6 +157,7 @@ ps：本查询系统还有计时器功能，可以看到您使用本系统的时
         Modify()
 
     def combination(self):
+        # 组合查询
         combine = combination()
         self.root.wait_window(combine)
         data = combine.returndata

@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="96c1a234-7e4b-43e6-b95a-431ba758e4f6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AddSoc.py" afterPath="$PROJECT_DIR$/AddSoc.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Config.py" afterPath="$PROJECT_DIR$/Config.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
     </list>
     <ignored path="student.iws" />
@@ -17,7 +19,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/student_new$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1497111501966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/student_new$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1497111571258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/student$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1496927662970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -29,25 +31,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+            <state relative-caret-position="400">
+              <caret line="159" column="14" selection-start-line="159" selection-start-column="14" selection-end-line="159" selection-end-column="14" />
               <folding>
                 <element signature="e#32#53#0" expanded="true" />
-                <marker date="1497111501949" expanded="true" signature="3379:3411" ph="SELECT * FRO... test" />
-                <marker date="1497111501949" expanded="true" signature="5241:5259" ph="SELECT * FRO... test" />
+                <marker date="1497111884081" expanded="true" signature="3380:3412" ph="SELECT * FRO... test" />
+                <marker date="1497111884081" expanded="true" signature="5372:5390" ph="SELECT * FRO... test" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddSoc.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AddSoc.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AddSoc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1399">
-              <caret line="56" column="71" selection-start-line="56" selection-start-column="71" selection-end-line="56" selection-end-column="71" />
+            <state relative-caret-position="249">
+              <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
               <folding>
                 <element signature="e#16#37#0" expanded="true" />
               </folding>
@@ -58,7 +60,7 @@
       <file leaf-file-name="combination.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/combination.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="675">
               <caret line="29" column="94" selection-start-line="29" selection-start-column="94" selection-end-line="29" selection-end-column="94" />
               <folding>
                 <marker date="1497107434501" expanded="true" signature="1650:1693" ph="SELECT * FRO... test" />
@@ -70,8 +72,8 @@
       <file leaf-file-name="Modify.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modify.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            <state relative-caret-position="425">
+              <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
               <folding>
                 <element signature="e#16#37#0" expanded="true" />
                 <marker date="1496673690977" expanded="true" signature="1041:1078" ph="UPDATE test " />
@@ -96,12 +98,12 @@
       <file leaf-file-name="Config.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
               <folding>
-                <marker date="1497103606829" expanded="true" signature="198:308" ph="INSERT INTO test... " />
-                <marker date="1497103606829" expanded="true" signature="327:352" ph="DROP TABLE I... " />
-                <marker date="1497103606829" expanded="true" signature="370:628" ph="CREATE TABLE... test" />
+                <marker date="1497111884096" expanded="true" signature="208:318" ph="INSERT INTO test... " />
+                <marker date="1497111884096" expanded="true" signature="352:377" ph="DROP TABLE I... " />
+                <marker date="1497111884096" expanded="true" signature="395:653" ph="CREATE TABLE... test" />
               </folding>
             </state>
           </provider>
@@ -131,11 +133,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/AddSoc.py" />
         <option value="$PROJECT_DIR$/Delete.py" />
-        <option value="$PROJECT_DIR$/Config.py" />
         <option value="$PROJECT_DIR$/combination.py" />
         <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/Config.py" />
+        <option value="$PROJECT_DIR$/AddSoc.py" />
       </list>
     </option>
   </component>
@@ -549,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497109775905</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="version 1.1">
+      <created>1497111555051</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1497111555051</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -607,8 +616,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#32#53#0" expanded="true" />
-            <marker date="1497111501949" expanded="true" signature="3379:3411" ph="SELECT * FRO... test" />
-            <marker date="1497111501949" expanded="true" signature="5241:5259" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="3380:3412" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="5372:5390" ph="SELECT * FRO... test" />
           </folding>
         </state>
       </provider>
@@ -639,9 +648,9 @@
         <state relative-caret-position="25">
           <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
           <folding>
-            <marker date="1497103606829" expanded="true" signature="198:308" ph="INSERT INTO test... " />
-            <marker date="1497103606829" expanded="true" signature="327:352" ph="DROP TABLE I... " />
-            <marker date="1497103606829" expanded="true" signature="370:628" ph="CREATE TABLE... test" />
+            <marker date="1497111884096" expanded="true" signature="208:318" ph="INSERT INTO test... " />
+            <marker date="1497111884096" expanded="true" signature="352:377" ph="DROP TABLE I... " />
+            <marker date="1497111884096" expanded="true" signature="395:653" ph="CREATE TABLE... test" />
           </folding>
         </state>
       </provider>
@@ -652,8 +661,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#32#53#0" expanded="true" />
-            <marker date="1497111501949" expanded="true" signature="3379:3411" ph="SELECT * FRO... test" />
-            <marker date="1497111501949" expanded="true" signature="5241:5259" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="3380:3412" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="5372:5390" ph="SELECT * FRO... test" />
           </folding>
         </state>
       </provider>
@@ -684,9 +693,9 @@
         <state relative-caret-position="25">
           <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
           <folding>
-            <marker date="1497103606829" expanded="true" signature="198:308" ph="INSERT INTO test... " />
-            <marker date="1497103606829" expanded="true" signature="327:352" ph="DROP TABLE I... " />
-            <marker date="1497103606829" expanded="true" signature="370:628" ph="CREATE TABLE... test" />
+            <marker date="1497111884096" expanded="true" signature="208:318" ph="INSERT INTO test... " />
+            <marker date="1497111884096" expanded="true" signature="352:377" ph="DROP TABLE I... " />
+            <marker date="1497111884096" expanded="true" signature="395:653" ph="CREATE TABLE... test" />
           </folding>
         </state>
       </provider>
@@ -697,8 +706,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#32#53#0" expanded="true" />
-            <marker date="1497111501949" expanded="true" signature="3379:3411" ph="SELECT * FRO... test" />
-            <marker date="1497111501949" expanded="true" signature="5241:5259" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="3380:3412" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="5372:5390" ph="SELECT * FRO... test" />
           </folding>
         </state>
       </provider>
@@ -729,9 +738,9 @@
         <state relative-caret-position="25">
           <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
           <folding>
-            <marker date="1497103606829" expanded="true" signature="198:308" ph="INSERT INTO test... " />
-            <marker date="1497103606829" expanded="true" signature="327:352" ph="DROP TABLE I... " />
-            <marker date="1497103606829" expanded="true" signature="370:628" ph="CREATE TABLE... test" />
+            <marker date="1497111884096" expanded="true" signature="208:318" ph="INSERT INTO test... " />
+            <marker date="1497111884096" expanded="true" signature="352:377" ph="DROP TABLE I... " />
+            <marker date="1497111884096" expanded="true" signature="395:653" ph="CREATE TABLE... test" />
           </folding>
         </state>
       </provider>
@@ -742,8 +751,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#32#53#0" expanded="true" />
-            <marker date="1497111501949" expanded="true" signature="3379:3411" ph="SELECT * FRO... test" />
-            <marker date="1497111501949" expanded="true" signature="5241:5259" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="3380:3412" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="5372:5390" ph="SELECT * FRO... test" />
           </folding>
         </state>
       </provider>
@@ -774,9 +783,9 @@
         <state relative-caret-position="25">
           <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
           <folding>
-            <marker date="1497103606829" expanded="true" signature="198:308" ph="INSERT INTO test... " />
-            <marker date="1497103606829" expanded="true" signature="327:352" ph="DROP TABLE I... " />
-            <marker date="1497103606829" expanded="true" signature="370:628" ph="CREATE TABLE... test" />
+            <marker date="1497111884096" expanded="true" signature="208:318" ph="INSERT INTO test... " />
+            <marker date="1497111884096" expanded="true" signature="352:377" ph="DROP TABLE I... " />
+            <marker date="1497111884096" expanded="true" signature="395:653" ph="CREATE TABLE... test" />
           </folding>
         </state>
       </provider>
@@ -787,8 +796,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#32#53#0" expanded="true" />
-            <marker date="1497111501949" expanded="true" signature="3379:3411" ph="SELECT * FRO... test" />
-            <marker date="1497111501949" expanded="true" signature="5241:5259" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="3380:3412" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="5372:5390" ph="SELECT * FRO... test" />
           </folding>
         </state>
       </provider>
@@ -819,9 +828,9 @@
         <state relative-caret-position="25">
           <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
           <folding>
-            <marker date="1497103606829" expanded="true" signature="198:308" ph="INSERT INTO test... " />
-            <marker date="1497103606829" expanded="true" signature="327:352" ph="DROP TABLE I... " />
-            <marker date="1497103606829" expanded="true" signature="370:628" ph="CREATE TABLE... test" />
+            <marker date="1497111884096" expanded="true" signature="208:318" ph="INSERT INTO test... " />
+            <marker date="1497111884096" expanded="true" signature="352:377" ph="DROP TABLE I... " />
+            <marker date="1497111884096" expanded="true" signature="395:653" ph="CREATE TABLE... test" />
           </folding>
         </state>
       </provider>
@@ -832,8 +841,8 @@
           <caret line="112" column="55" selection-start-line="112" selection-start-column="55" selection-end-line="112" selection-end-column="55" />
           <folding>
             <element signature="e#32#53#0" expanded="true" />
-            <marker date="1497111501949" expanded="true" signature="3379:3411" ph="SELECT * FRO... test" />
-            <marker date="1497111501949" expanded="true" signature="5241:5259" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="3380:3412" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="5372:5390" ph="SELECT * FRO... test" />
           </folding>
         </state>
       </provider>
@@ -861,9 +870,9 @@
         <state relative-caret-position="75">
           <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding>
-            <marker date="1497103606829" expanded="true" signature="198:308" ph="INSERT INTO test... " />
-            <marker date="1497103606829" expanded="true" signature="327:352" ph="DROP TABLE I... " />
-            <marker date="1497103606829" expanded="true" signature="370:628" ph="CREATE TABLE... test" />
+            <marker date="1497111884096" expanded="true" signature="208:318" ph="INSERT INTO test... " />
+            <marker date="1497111884096" expanded="true" signature="352:377" ph="DROP TABLE I... " />
+            <marker date="1497111884096" expanded="true" signature="395:653" ph="CREATE TABLE... test" />
           </folding>
         </state>
       </provider>
@@ -874,8 +883,8 @@
           <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
           <folding>
             <element signature="e#32#53#0" expanded="true" />
-            <marker date="1497111501949" expanded="true" signature="3379:3411" ph="SELECT * FRO... test" />
-            <marker date="1497111501949" expanded="true" signature="5241:5259" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="3380:3412" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="5372:5390" ph="SELECT * FRO... test" />
           </folding>
         </state>
       </provider>
@@ -903,9 +912,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1497103606829" expanded="true" signature="198:308" ph="INSERT INTO test... " />
-            <marker date="1497103606829" expanded="true" signature="327:352" ph="DROP TABLE I... " />
-            <marker date="1497103606829" expanded="true" signature="370:628" ph="CREATE TABLE... test" />
+            <marker date="1497111884096" expanded="true" signature="208:318" ph="INSERT INTO test... " />
+            <marker date="1497111884096" expanded="true" signature="352:377" ph="DROP TABLE I... " />
+            <marker date="1497111884096" expanded="true" signature="395:653" ph="CREATE TABLE... test" />
           </folding>
         </state>
       </provider>
@@ -916,8 +925,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#32#53#0" expanded="true" />
-            <marker date="1497111501949" expanded="true" signature="3379:3411" ph="SELECT * FRO... test" />
-            <marker date="1497111501949" expanded="true" signature="5241:5259" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="3380:3412" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="5372:5390" ph="SELECT * FRO... test" />
           </folding>
         </state>
       </provider>
@@ -934,9 +943,9 @@
         <state relative-caret-position="325">
           <caret line="13" column="22" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="22" />
           <folding>
-            <marker date="1497103606829" expanded="true" signature="198:308" ph="INSERT INTO test... " />
-            <marker date="1497103606829" expanded="true" signature="327:352" ph="DROP TABLE I... " />
-            <marker date="1497103606829" expanded="true" signature="370:628" ph="CREATE TABLE... test" />
+            <marker date="1497111884096" expanded="true" signature="208:318" ph="INSERT INTO test... " />
+            <marker date="1497111884096" expanded="true" signature="352:377" ph="DROP TABLE I... " />
+            <marker date="1497111884096" expanded="true" signature="395:653" ph="CREATE TABLE... test" />
           </folding>
         </state>
       </provider>
@@ -947,8 +956,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#32#53#0" expanded="true" />
-            <marker date="1497111501949" expanded="true" signature="3379:3411" ph="SELECT * FRO... test" />
-            <marker date="1497111501949" expanded="true" signature="5241:5259" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="3380:3412" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="5372:5390" ph="SELECT * FRO... test" />
           </folding>
         </state>
       </provider>
@@ -965,9 +974,9 @@
         <state relative-caret-position="325">
           <caret line="13" column="22" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="22" />
           <folding>
-            <marker date="1497103606829" expanded="true" signature="198:308" ph="INSERT INTO test... " />
-            <marker date="1497103606829" expanded="true" signature="327:352" ph="DROP TABLE I... " />
-            <marker date="1497103606829" expanded="true" signature="370:628" ph="CREATE TABLE... test" />
+            <marker date="1497111884096" expanded="true" signature="208:318" ph="INSERT INTO test... " />
+            <marker date="1497111884096" expanded="true" signature="352:377" ph="DROP TABLE I... " />
+            <marker date="1497111884096" expanded="true" signature="395:653" ph="CREATE TABLE... test" />
           </folding>
         </state>
       </provider>
@@ -978,8 +987,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#32#53#0" expanded="true" />
-            <marker date="1497111501949" expanded="true" signature="3379:3411" ph="SELECT * FRO... test" />
-            <marker date="1497111501949" expanded="true" signature="5241:5259" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="3380:3412" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="5372:5390" ph="SELECT * FRO... test" />
           </folding>
         </state>
       </provider>
@@ -989,9 +998,9 @@
         <state relative-caret-position="325">
           <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
           <folding>
-            <marker date="1497103606829" expanded="true" signature="198:308" ph="INSERT INTO test... " />
-            <marker date="1497103606829" expanded="true" signature="327:352" ph="DROP TABLE I... " />
-            <marker date="1497103606829" expanded="true" signature="370:628" ph="CREATE TABLE... test" />
+            <marker date="1497111884096" expanded="true" signature="208:318" ph="INSERT INTO test... " />
+            <marker date="1497111884096" expanded="true" signature="352:377" ph="DROP TABLE I... " />
+            <marker date="1497111884096" expanded="true" signature="395:653" ph="CREATE TABLE... test" />
           </folding>
         </state>
       </provider>
@@ -1002,8 +1011,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#32#53#0" expanded="true" />
-            <marker date="1497111501949" expanded="true" signature="3379:3411" ph="SELECT * FRO... test" />
-            <marker date="1497111501949" expanded="true" signature="5241:5259" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="3380:3412" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="5372:5390" ph="SELECT * FRO... test" />
           </folding>
         </state>
       </provider>
@@ -1013,9 +1022,9 @@
         <state relative-caret-position="325">
           <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
           <folding>
-            <marker date="1497103606829" expanded="true" signature="198:308" ph="INSERT INTO test... " />
-            <marker date="1497103606829" expanded="true" signature="327:352" ph="DROP TABLE I... " />
-            <marker date="1497103606829" expanded="true" signature="370:628" ph="CREATE TABLE... test" />
+            <marker date="1497111884096" expanded="true" signature="208:318" ph="INSERT INTO test... " />
+            <marker date="1497111884096" expanded="true" signature="352:377" ph="DROP TABLE I... " />
+            <marker date="1497111884096" expanded="true" signature="395:653" ph="CREATE TABLE... test" />
           </folding>
         </state>
       </provider>
@@ -1026,8 +1035,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#32#53#0" expanded="true" />
-            <marker date="1497111501949" expanded="true" signature="3379:3411" ph="SELECT * FRO... test" />
-            <marker date="1497111501949" expanded="true" signature="5241:5259" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="3380:3412" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="5372:5390" ph="SELECT * FRO... test" />
           </folding>
         </state>
       </provider>
@@ -1037,9 +1046,9 @@
         <state relative-caret-position="325">
           <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
           <folding>
-            <marker date="1497103606829" expanded="true" signature="198:308" ph="INSERT INTO test... " />
-            <marker date="1497103606829" expanded="true" signature="327:352" ph="DROP TABLE I... " />
-            <marker date="1497103606829" expanded="true" signature="370:628" ph="CREATE TABLE... test" />
+            <marker date="1497111884096" expanded="true" signature="208:318" ph="INSERT INTO test... " />
+            <marker date="1497111884096" expanded="true" signature="352:377" ph="DROP TABLE I... " />
+            <marker date="1497111884096" expanded="true" signature="395:653" ph="CREATE TABLE... test" />
           </folding>
         </state>
       </provider>
@@ -1072,39 +1081,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <element signature="e#16#37#0" expanded="true" />
-            <marker date="1496673690977" expanded="true" signature="1041:1078" ph="UPDATE test " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AddSoc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1399">
-          <caret line="56" column="71" selection-start-line="56" selection-start-column="71" selection-end-line="56" selection-end-column="71" />
-          <folding>
-            <element signature="e#16#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1497103606829" expanded="true" signature="198:308" ph="INSERT INTO test... " />
-            <marker date="1497103606829" expanded="true" signature="327:352" ph="DROP TABLE I... " />
-            <marker date="1497103606829" expanded="true" signature="370:628" ph="CREATE TABLE... test" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Delete.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1116,9 +1092,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="159" column="14" selection-start-line="159" selection-start-column="14" selection-end-line="159" selection-end-column="14" />
+          <folding>
+            <element signature="e#32#53#0" expanded="true" />
+            <marker date="1497111884081" expanded="true" signature="3380:3412" ph="SELECT * FRO... test" />
+            <marker date="1497111884081" expanded="true" signature="5372:5390" ph="SELECT * FRO... test" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding>
+            <element signature="e#16#37#0" expanded="true" />
+            <marker date="1496673690977" expanded="true" signature="1041:1078" ph="UPDATE test " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <marker date="1497111884096" expanded="true" signature="208:318" ph="INSERT INTO test... " />
+            <marker date="1497111884096" expanded="true" signature="352:377" ph="DROP TABLE I... " />
+            <marker date="1497111884096" expanded="true" signature="395:653" ph="CREATE TABLE... test" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/combination.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="675">
           <caret line="29" column="94" selection-start-line="29" selection-start-column="94" selection-end-line="29" selection-end-column="94" />
           <folding>
             <marker date="1497107434501" expanded="true" signature="1650:1693" ph="SELECT * FRO... test" />
@@ -1126,14 +1137,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
+    <entry file="file://$PROJECT_DIR$/AddSoc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+        <state relative-caret-position="249">
+          <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
           <folding>
-            <element signature="e#32#53#0" expanded="true" />
-            <marker date="1497111501949" expanded="true" signature="3379:3411" ph="SELECT * FRO... test" />
-            <marker date="1497111501949" expanded="true" signature="5241:5259" ph="SELECT * FRO... test" />
+            <element signature="e#16#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
