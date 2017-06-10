@@ -20,32 +20,23 @@ class app:
         self.root.title("芯片查询软件")
         self.InitTime = time.time()
         self.frm_T = Frame(self.root)
+        self.frm_T2 = Frame(self.root)
         self.root.geometry()
-        # 菜单栏
-        menubar = Menu(self.root)
-        # 文件菜单
-        filemenu = Menu(menubar,tearoff=0)
-        filemenu.add_command(label='导入 excel',command=lambda:self.importdata())
-        filemenu.add_command(label='导出 excel',command=lambda :self.outputExcel())
-        menubar.add_cascade(label='文件',menu=filemenu)
-        # 修改删除菜单
-        modifymenu = Menu(menubar,tearoff=0)
-        modifymenu.add_command(label='删除',command=lambda :self.deleteSoc())
-        modifymenu.add_command(label='增加',command=lambda :self.addSoc())
-        modifymenu.add_command(label='修改',command=lambda :self.modify())
-        menubar.add_cascade(label='修改',menu=modifymenu)
-        # 查询菜单
-        searchmenu = Menu(menubar,tearoff=0)
-        searchmenu.add_command(label='组合查询',command=lambda :self.combination())
-        menubar.add_cascade(label='查询',menu=searchmenu)
-        menubar.add_command(label='帮助',command=lambda :self.helpMessage())
-        self.root.config(menu=menubar)
+        Button(self.root, text="help", command=lambda: self.helpMessage()).pack(side=TOP)  # help
+        Button(self.frm_T2, text="export excel", command=lambda: self.outputExcel()).pack(side=RIGHT)  # 导出数据按钮
+        Button(self.frm_T2, text="import excel", command=lambda: self.importdata()).pack(side=RIGHT)  # 导入数据按钮
+        Button(self.frm_T2,text="delete",command=lambda:self.deleteSoc()).pack(side=LEFT)
+        Button(self.frm_T2, text="add", command=lambda: self.addSoc()).pack(side=LEFT)
+        Button(self.frm_T2, text="modify", command=lambda: self.modify()).pack(side=LEFT)
+        Button(self.frm_T2, text="combination search", command=lambda: self.combination()).pack(side=LEFT)
+
         self.test_in = Entry(self.frm_T)
         self.chooseList = Combobox(self.frm_T, values=['功能','管脚数','型号','名称'])
         self.chooseList.pack(side=LEFT)
         self.test_in.pack(side=LEFT)
         self.frm_T.pack()
-        Button(self.root, text="search", command=lambda: self.search()).pack()  # 查询按钮
+        self.frm_T2.pack()
+        Button(self.frm_T, text="search", command=lambda: self.search()).pack(side=BOTTOM)  # 查询按钮
 
         self.mid = Frame(self.root)
         self.tree = Treeview(self.mid, show="headings",columns=('col1', 'col2', 'col3', 'col4', 'col5', 'col6','col7'))
