@@ -15,14 +15,14 @@ class combination(Toplevel):
         self.bottom.pack(side=BOTTOM)
 
 
-        self.chooseList = Combobox(self.top, values=['管脚数', '型号', '名称', '管脚定义', '简介'])
+        self.chooseList = Combobox(self.top, values=['管脚数', '型号', '名称', '管脚定义', '简介','功能'])
         self.chooseList.pack(side=LEFT)
         self.data1 = Entry(self.top)
         self.data1.pack(side=RIGHT)
         self.logic = Combobox(self,values=['与', '或', '非'])
         self.logic.pack()
 
-        self.chooseList2 = Combobox(self.bottom, values=['管脚数', '型号', '名称', '管脚定义', '简介'])
+        self.chooseList2 = Combobox(self.bottom, values=['管脚数', '型号', '名称', '管脚定义', '简介','功能'])
         self.chooseList2.pack(side=LEFT)
         self.data2 = Entry(self.bottom)
         self.data2.pack(side=RIGHT)
@@ -36,7 +36,8 @@ class combination(Toplevel):
             '型号': 'typename',
             '管脚数': 'number',
             '管脚定义':'definition',
-            '简介':'information'
+            '简介':'information',
+            '功能':'function'
         }
         condition1 = choosedict.get(self.chooseList.get().encode('utf-8'))
         condition2 = choosedict.get(self.chooseList2.get().encode('utf-8'))
