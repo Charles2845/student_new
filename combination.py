@@ -54,8 +54,7 @@ class combination(Toplevel):
             '非':'NOT'
         }
         logic = logicdic.get(self.logic.get().encode('utf-8'))
-        searchString = "SELECT * FROM test WHERE {} LIKE '%{}%' {} {} LIKE'%{}%'".format(condition1, data1, logic,
-                                                                                         condition2, data2)
+        searchString = "SELECT * FROM test WHERE {} LIKE '%{}%' {} {} LIKE'%{}%'".format(condition1, data1, logic, condition2, data2)
         cursor.execute(searchString)
         self.returndata = cursor.fetchall()
         self.destroy()
