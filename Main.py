@@ -95,7 +95,9 @@ ps：本查询系统还有计时器功能，可以看到您使用本系统的时
         if name_choose:
             self.tree.delete()
             name = self.test_in.get()
-            searchString  = "SELECT * FROM test WHERE {}='{}'".format(name_choose,name)
+            if name_choose == 'function' or name_choose == 'name':
+                name = name.encode('utf-8')
+            searchString = "SELECT * FROM test WHERE {} LIKE '%{}%'".format(name_choose, name)
             cursor.execute(searchString)
             data = cursor.fetchall()
             map(self.tree.delete,self.tree.get_children())
