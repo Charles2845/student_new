@@ -22,6 +22,7 @@ class app:
         self.frm_T = Frame(self.root)
         self.frm_T2 = Frame(self.root)
         self.root.geometry()
+        self.outdata = ''
         Button(self.root, text="帮助", command=lambda: self.helpMessage()).pack(side=TOP)  # help
         Button(self.frm_T2, text="导出 excel", command=lambda: self.outputExcel()).pack(side=RIGHT)  # 导出数据按钮
         Button(self.frm_T2, text="导入 excel", command=lambda: self.importdata()).pack(side=RIGHT)  # 导入数据按钮
@@ -86,9 +87,12 @@ ps：本查询系统还有计时器功能，可以看到您使用本系统的时
         if name_choose:
             self.tree.delete()
             name = self.test_in.get()  # 通过Entry获取输入信息，然后拼接成SQL查询语句
+            if name_choose=='function':
+                name = name.encode('utf-8')
             searchString  = "SELECT * FROM test WHERE {}='{}'".format(name_choose,name)
             cursor.execute(searchString)
             data = cursor.fetchall()
+            self.outdata = data
             map(self.tree.delete,self.tree.get_children())
             if data:
                 i = 1
@@ -136,7 +140,7 @@ ps：本查询系统还有计时器功能，可以看到您使用本系统的时
         wb = xlwt.Workbook()
         ws = wb.add_sheet('Main')
         filename = tkFileDialog.asksaveasfilename(filetypes=[('Excel files', '.xls')])
-        data = cursor.fetchall()
+        data = self.outdata
         for each in range(len(data)):
             for single in range(len(data[each])):
                 if type(data[each][single]) == unicode:
