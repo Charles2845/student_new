@@ -44,13 +44,17 @@ class combination(Toplevel):
 
         data1 = self.data1.get()
         data2 = self.data2.get()
+        if condition1 == 'function' or condition1=='name':
+            data1 = data1.encode('utf-8')
+        if condition2 == 'function' or condition2=='name':
+            data2 = data2.encode('utf-8')
         logicdic = {
             '与':'AND',
             '或':'OR',
             '非':'NOT'
         }
         logic = logicdic.get(self.logic.get().encode('utf-8'))
-        searchString = "SELECT * FROM test WHERE {}='{}' {} {}='{}'".format(condition1,data1,logic,condition2,data2)
+        searchString = "SELECT * FROM test WHERE {} LIKE '%{}%' {} {} LIKE'%{}%'".format(condition1,data1,logic,condition2,data2)
         cursor.execute(searchString)
         self.returndata = cursor.fetchall()
         self.destroy()
