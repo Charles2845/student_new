@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import pymysql
-conn = pymysql.connect(host='127.0.0.1',user='root',passwd='jw07190811',db='test',charset='utf8')
+conn = pymysql.connect(host='127.0.0.1',user='',passwd='',db='',charset='utf8')
 cursor = conn.cursor()
 insertSQLstring = "INSERT INTO test (typename,name,function,number,definition,information) VALUES ('{}','{}','{}','{}','{}','{}')"
 
